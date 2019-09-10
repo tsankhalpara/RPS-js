@@ -22,10 +22,23 @@ header {
   color: white;
   font-size: 48px;
   padding: 15px 20px;
+  position: relative;
 }
 
 .badge {
   background-color: #D99FC6;
   font-size: 16px;
   padding: 2px 10px;
+}
+
+#user-label {
+  position: absolute;
+  top: 30px;
+  left: -30px;
+}
+
+#computer-label {
+  position: absolute;
+  top: 30px;
+  right: -36px;
 }

@@ -7,8 +7,10 @@
 
 body {
   background-color: #990066;
+  font-family:'Comfortaa', cursive;
 }
 
 header {
   background-color: white;
+  padding: 20px;
 }

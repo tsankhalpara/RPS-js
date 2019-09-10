@@ -42,3 +42,12 @@ header {
   top: 30px;
   right: -36px;
 }
+
+.result {
+  font-size: 40px;
+  color: white;
+}
+
+.choice {
+  display: inline-block;
+}

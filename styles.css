@@ -50,11 +50,17 @@ header {
 
 .choice {
   display: inline-block;
-  margin: 5px;
-  padding: 20px;
+  border: 5px solid white;
+  border-radius: 50%;
+  margin: 30px 10px;
 }
 
 img {
   height: 150px;
   width: 150px;
+}
+
+#message {
+  color: white;
+  font-size: 26px;
 }

@@ -14,3 +14,12 @@ header {
   background-color: white;
   padding: 20px;
 }
+
+.score-board {
+  margin: 20px auto;
+  border: 3px solid white;
+  width: 200px;
+  color: white;
+  font-size: 48px;
+  padding: 15px 20px;
+}

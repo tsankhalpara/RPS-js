@@ -14,6 +14,8 @@ function getComputerChoice() {
   return choices[randomNumber]
 };
 
+console.log(getComputerChoice());
+
 function game(userChoice) {
   console.log(userChoice);
 };

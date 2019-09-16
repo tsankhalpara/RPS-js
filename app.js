@@ -31,6 +31,7 @@ function lose() {
   computerScore++;
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
+  result_div.innerHTML = convertToWord(userChoice) + " beats " + convertToWord(computerChoice) + ". You lose!"
 }
 
 function draw() {

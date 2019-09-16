@@ -21,7 +21,9 @@ function win() {
 }
 
 function lose() {
+  computerScore++;
   console.log("You lose");
+  console.log(computerScore);
 }
 
 function draw() {

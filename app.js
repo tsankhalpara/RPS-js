@@ -14,26 +14,38 @@ function getComputerChoice() {
   return choices[randomNumber]
 };
 
+function win() {
+  console.log("You win");
+}
+
+function lose() {
+  console.log("You lose");
+}
+
+function draw() {
+  console.log("It's a draw");
+}
+
 function game(userChoice) {
   const computerChoice = getComputerChoice();
   if ((userChoice === "r" && computerChoice === "r") ||
   (userChoice === "p" && computerChoice === "p") ||
   (userChoice === "s" && computerChoice === "s")){
-    console.log("Draw");
+    draw();
     console.log("Computer: " + computerChoice);
     console.log("User: " + userChoice);
   }
   else if ((userChoice === "r" && computerChoice === "s") ||
   (userChoice === "s" && computerChoice === "p") ||
   (userChoice === "p" && computerChoice === "r")) {
-    console.log("User win");
+    win();
     console.log("Computer: " + computerChoice);
     console.log("User: " + userChoice);
   }
   else if ((userChoice === "r" && computerChoice === "p") ||
   (userChoice === "p" && computerChoice === "s") ||
   (userChoice === "s" && computerChoice === "r")) {
-    console.log("computer wins");
+    lose();
     console.log("Computer: " + computerChoice);
     console.log("User: " + userChoice);
   }

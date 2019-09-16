@@ -23,6 +23,20 @@ function game(userChoice) {
     console.log("Computer: " + computerChoice);
     console.log("User: " + userChoice);
   }
+  else if ((userChoice === "r" && computerChoice === "s") ||
+  (userChoice === "s" && computerChoice === "p") ||
+  (userChoice === "p" && computerChoice === "r")) {
+    console.log("User win");
+    console.log("Computer: " + computerChoice);
+    console.log("User: " + userChoice);
+  }
+  else if ((userChoice === "r" && computerChoice === "p") ||
+  (userChoice === "p" && computerChoice === "s") ||
+  (userChoice === "s" && computerChoice === "r")) {
+    console.log("computer wins");
+    console.log("Computer: " + computerChoice);
+    console.log("User: " + userChoice);
+  }
 };
 
 function main() {

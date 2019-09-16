@@ -27,7 +27,7 @@ function win(userChoice, computerChoice) {
   result_div.innerHTML = convertToWord(userChoice) + " beats " + convertToWord(computerChoice) + ". You win!"
 }
 
-function lose() {
+function lose(userChoice, computerChoice) {
   computerScore++;
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
@@ -57,7 +57,7 @@ function game(userChoice) {
   else if ((userChoice === "r" && computerChoice === "p") ||
   (userChoice === "p" && computerChoice === "s") ||
   (userChoice === "s" && computerChoice === "r")) {
-    lose();
+    lose(userChoice, computerChoice);
     console.log("Computer: " + computerChoice);
     console.log("User: " + userChoice);
   }

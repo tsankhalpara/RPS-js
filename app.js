@@ -14,10 +14,15 @@ function getComputerChoice() {
   return choices[randomNumber]
 };
 
-console.log(getComputerChoice());
-
 function game(userChoice) {
   const computerChoice = getComputerChoice();
+  if ((userChoice === "r" && computerChoice === "r") ||
+  (userChoice === "p" && computerChoice === "p") ||
+  (userChoice === "s" && computerChoice === "s")){
+    console.log("Draw");
+    console.log("Computer: " + computerChoice);
+    console.log("User: " + userChoice);
+  }
 };
 
 function main() {

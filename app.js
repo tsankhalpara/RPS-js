@@ -1,5 +1,5 @@
-const userScore = 0;
-const computerScore = 0;
+var userScore = 0;
+var computerScore = 0;
 const userScore_span = document.getElementById("user-score");
 const computerScore_span = document.getElementById("computer-score");
 const scoreboard_div = document.getElementsByClassName("score-board");
@@ -15,7 +15,9 @@ function getComputerChoice() {
 };
 
 function win() {
+  userScore++;
   console.log("You win");
+  console.log(userScore);
 }
 
 function lose() {

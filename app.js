@@ -16,14 +16,14 @@ function getComputerChoice() {
 
 function win() {
   userScore++;
-  console.log("You win");
-  console.log(userScore);
+  userScore_span.innerHTML = userScore;
+  computerScore_span.innerHTML = computerScore;
 }
 
 function lose() {
   computerScore++;
-  console.log("You lose");
-  console.log(computerScore);
+  userScore_span.innerHTML = userScore;
+  computerScore_span.innerHTML = computerScore;
 }
 
 function draw() {

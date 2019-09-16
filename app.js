@@ -34,8 +34,10 @@ function lose(userChoice, computerChoice) {
   result_div.innerHTML = convertToWord(userChoice) + " beats " + convertToWord(computerChoice) + ". You lose!"
 }
 
-function draw() {
-  console.log("It's a draw");
+function draw(userChoice, computerChoice) {
+  userScore_span.innerHTML = userScore;
+  computerScore_span.innerHTML = computerScore;
+  result_div.innerHTML = "It's a draw."
 }
 
 function game(userChoice) {
@@ -43,7 +45,7 @@ function game(userChoice) {
   if ((userChoice === "r" && computerChoice === "r") ||
   (userChoice === "p" && computerChoice === "p") ||
   (userChoice === "s" && computerChoice === "s")){
-    draw();
+    draw(userChoice, computerChoice);
     console.log("Computer: " + computerChoice);
     console.log("User: " + userChoice);
   }
